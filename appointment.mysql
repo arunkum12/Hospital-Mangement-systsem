@@ -1,0 +1,9 @@
+CREATE TABLE Appointments (
+    appointmentID VARCHAR(10) PRIMARY KEY,
+    patientID VARCHAR(10),
+    doctorID VARCHAR(10),
+    appointmentDate DATE,
+    appointmentTime TIME,
+    status VARCHAR(20),
+    FOREIGN KEY (patientID) REFERENCES Patients(patientID)
+);
