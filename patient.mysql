@@ -1,0 +1,9 @@
+CREATE TABLE Patients (
+    patientID VARCHAR(10) PRIMARY KEY,
+    name VARCHAR(50),
+    address VARCHAR(100),
+    contactInfo VARCHAR(15),
+    age INT,
+    gender VARCHAR(10),
+    medicalHistory TEXT
+);
